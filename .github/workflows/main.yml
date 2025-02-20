@@ -1,0 +1,14 @@
+# A first worflow to play around with the editor
+name: My First Workflow
+on:
+  push:
+    branches:
+      - main
+jobs:
+  first_job:
+    name: My first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet the user
+        run: echo "Hello World from ${{ github.actor }}."
+             echo "Current Branch is ${{ github.ref }}."
