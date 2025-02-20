@@ -1,7 +1,7 @@
 # A first worflow to play around with the editor
 name: My First Workflow
 on:
-  push:
+  workflow_dispatch:
     branches:
       - main
 jobs:
